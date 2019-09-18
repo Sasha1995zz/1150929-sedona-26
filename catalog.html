@@ -19,8 +19,65 @@
         </nav>
     </header>
       <main>
-         <h2>Поиск отелей</h2>
-          <section>
+ <section>
+   <h1>Поиск жилья в седоне</h1>
+ <form> 
+    <div>
+      <div>
+        <fieldset>
+          <legend>Инфраструктура:</legend>
+        <ul>
+          <li>
+             <input type="checkbox" id="swim" name="swim" checked>
+             <label for="swim">Бассейн</label>
+           </li>
+          <li>
+            <input type="checkbox" id="parking" name="parking">
+             <label for="parking">Парковка</label>
+          </li>
+          <li>
+            <input type="checkbox" id="Wi-fi" name="Wi-fi">
+             <label for="Wi-fi">Wi-fi</label>
+          </li>
+        </ul>
+        </fieldset>
+      </div>
+     <div>
+        <fieldset>
+        <legend>Тип жилья:</legend>
+        <ul>
+           <li>
+             <input type="checkbox" id="hotel" name="hotel" checked>
+             <label for="hotel">Гостиница</label>
+           </li>
+          <li>
+            <input type="checkbox" id="motel" name="motel" checked>
+             <label for="motel">Мотель</label>
+           </li>
+          <li>
+            <input type="checkbox" id="apartments" name="apartments" checked>
+             <label for="apartments">Апартаменты</label>
+           </li>
+        </ul>
+       </fieldset>
+     </div>
+       <div>
+        <fieldset>
+            <legend>Стоимость в сутки (p):</legend>
+       </div>
+          <!--
+          <div>
+              цена от и до, ползунок
+         </div> 
+          -->
+        </fieldset>
+       <div>
+           <button type="submit" name="button">Показать</button>          
+      </div>
+    </div>
+  </form>
+</section>
+      <section>
           <h2>Результаты поиска</h2>
           <section>
             <div>
@@ -82,7 +139,7 @@
                   <a href="#">Забронировать</a>
                 </div>
               </div>
-              <div >
+              <div>
                 <span>
                   <span>*</span>
                   <span>*</span>

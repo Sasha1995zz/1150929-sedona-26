@@ -20,13 +20,13 @@
         </nav>
     </header>
     <main>
-      <img src="img/background_photo.jpg">
+     <!--- <img src="img/background_photo.jpg"> -->
       <img src="img/intro-welcome.svg" width="459" height="353" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
-       </div>
        <section>
            <div>
               <h2>Седона-небольшой городок в Аризоне, заслуживающий большего!</h2>
               <p>Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!<p>
+           </div>
        </section>
          <section>
               <h1>Преимущества</h1>
@@ -87,46 +87,44 @@
          </section>
           <section> 
               <div>
-                <h2>Заинтересовались?<h2>
+                <h2>Заинтересовались?</h2>
                 <p>Укажите предпологаемые даты поездки, <br>
           	    и мы покажем вам лучшие гостиницы в Седоне</p>
               </div>
-             <div>
+            <div>
               	 <h1>Поиск гостиницы в Седоне</h1>
                <form>
                 <div>
-                   <label>Дата заезда</label>
+                   <label for="check2">Дата заезда</label>
                   <div>
-                   <input placeholder="24 апреля 2017" name="check-in">
+                   <input placeholder="24 апреля 2017" id="check2" name="check2">
+                </div>
                 </div>
                 <div>
-                   <label>Дата выезда</label>
+                   <label for="check3">Дата выезда</label>
                  <div>
-                   <input placeholder="4 июля 2017" name="check-out">
-                  </button>
-                </div>
+                   <input placeholder="4 июля 2017" id="check3" name="check3">
+                  </div>
                  </div>
-                <div>
                   <div>
-                    <label>Взрослые</label>
+                    <label for="adults">Взрослые</label>
                     <div>
                       <button type="button"><span>Увеличение</span></button>
-                      <input value="2" name="adults">
-                      <button><span>Уменьшить</span></button>
+                      <input value="2" id="adults"  name="adults">
+                      <button><span>Уменьшение</span></button>
                     </div>
                   </div>
                   <div>
-                    <label>Дети</label>
+                    <label for="kids">Дети</label>
                     <div>
                       <button type="button"><span>Увеличение</span></button>
-                      <input value="0"  name="kids">
+                      <input value="0" id="kids" name="kids">
                       <button type="button"><span>Уменьшение</span></button>
                     </div>
                   </div>
-                </div>
                 <button name="search-submit">Найти</button>
                </form>
-             </div>
+            </div>
               <section>
               <h2>Расположение Седоны на карте</h2>
               <img src="img/map.png"  width="1200" height="594" alt="Седона на карте">

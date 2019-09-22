@@ -1,0 +1,85 @@
+body {
+  margin: 0 auto;
+  padding: 0;
+
+  font-family: 'PT Sans', sans-serif;
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 700;
+  color: #000000;
+  text-transform: uppercase;
+
+  background-color: #ffffff;
+  background-image: url("background_photo.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+}
+a {
+  text-decoration: none;
+}
+.main-navigation {
+  font-size: 14px;
+  line-height: 26px;
+  color: #000000;
+
+  background-color: #ffffff;
+}
+.site-navigation {
+  list-style: none;
+}
+
+.promo{
+ text-align: center;
+}
+
+.reasons_div {
+  text-align: center;
+}
+
+.reasons_title h2 {
+  font-size: 30px;
+  line-height: 42px;
+}
+
+.reasons_title{
+color: #000000;
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+text-transform: uppercase;
+color: #333333;
+}
+
+.reasons_discription{
+color: #333333;
+font-size: 14px;
+font-weight: 400;
+line-height: 26px;
+}
+
+
+.features-list {
+  list-style: none;
+}
+ 
+ /*.site-navigation a:hover,
+.site-navigation a:focus; {
+  background-color: #242424;
+}*/
+
+
+/* Отели */
+.search,
+.search_button{
+ text-align: center;  
+}
+.search_button{
+width: 289px;
+height: 18px;
+color: #000000;
+font-family: "PT Sans";
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+text-transform: uppercase;
+}

@@ -10,37 +10,36 @@ body {
   text-transform: uppercase;
 
   background-color: #ffffff;
-  background-image: url("background_photo.jpg");
   background-position: top center;
   background-repeat: no-repeat;
 }
-a {
+.site-navigation a {
   text-decoration: none;
+  color: #000000;
 }
 .main-navigation {
   font-size: 14px;
   line-height: 26px;
   color: #000000;
-
   background-color: #ffffff;
 }
 .site-navigation {
   list-style: none;
 }
-
+/*.site-navigation li {
+display: inline;
+}*/
 .promo{
  text-align: center;
 }
 
-.reasons_div {
+.reasons_div{
   text-align: center;
 }
-
 .reasons_title h2 {
   font-size: 30px;
   line-height: 42px;
 }
-
 .reasons_title{
 color: #000000;
 font-size: 21px;
@@ -49,15 +48,12 @@ line-height: 26px;
 text-transform: uppercase;
 color: #333333;
 }
-
 .reasons_discription{
 color: #333333;
 font-size: 14px;
 font-weight: 400;
 line-height: 26px;
 }
-
-
 .features-list {
   list-style: none;
 }
@@ -67,19 +63,117 @@ line-height: 26px;
   background-color: #242424;
 }*/
 
-
-/* Отели */
+.quest_question{
+color: #000000;
+text-align: center;
+font-size: 30px;
+font-weight: 700;
+line-height: 36px;
+font-weight: 700;
+line-height: 24px;
+}
+.quest_title{
+color: #000000;
+text-align: center;
+font-size: 14px;
+font-weight: 400;
+line-height: 24px;
+text-transform: uppercase;
+}
 .search,
 .search_button{
  text-align: center;  
 }
 .search_button{
-width: 289px;
-height: 18px;
+color: #ffffff;
+text-align: center;
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+width: 568px;
+height: 86px;
+background-color: #766357;
+
+}
+.search-submit{
+  width: 458px;
+  height: 58px;
+  background-color: #81b3d2;
+}
+.search-submit a:hover,
+.search-submit a:focus; {
+  background-color: #669ec0;
+}
+.search-submit a:active;{
+  background-color: #5496bd;
+}
+.hotel_assortment li{
+list-style: none;
 color: #000000;
-font-family: "PT Sans";
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-transform: uppercase;
+}
+
+.hotels_list a{
+ text-decoration: none;
+}
+.hotels_list li{
+  list-style: none;
+}
+.hotel_title{
+height: 16px;
+color: #000000;
 font-size: 21px;
 font-weight: 700;
 line-height: 26px;
 text-transform: uppercase;
+}
+.hotel_price{
+height: 11px;
+color: #333333;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-transform: uppercase;
+}
+.hotel_rating{
+color: #666666;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-transform: uppercase;
+}
+.hotel_buttons{
+color: #000000;
+font-size: 14px;
+font-weight: 700;
+line-height: 21px;
+text-transform: uppercase;
+width: 142px;
+height: 27px;
+background-color: #766357;
+}
+
+/* подвал */
+.hashtag{
+color: #000000;
+font-size: 21px;
+font-weight: 700;
+line-height: 26px;
+text-transform: uppercase;
+}
+.hashtag a{
+text-decoration: none;
+}
+.footer-social a{
+ text-decoration: none;
+}
+.social_networks{
+list-style: none;
+}
+.developer__logo{
+width: 115px;
+height: 41px;
 }

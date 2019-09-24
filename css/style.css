@@ -57,11 +57,20 @@ line-height: 26px;
 .features-list {
   list-style: none;
 }
+
  
- /*.site-navigation a:hover,
-.site-navigation a:focus; {
-  background-color: #242424;
-}*/
+.cause_icon_home{
+  background-image: url(../img/icon-1.svg);
+  background-repeat: no-repeat;
+}
+.cause_icon_food{
+  background-image: url(../img/icon-2.svg);
+  background-repeat: no-repeat;
+}
+.cause_icon_souvenirs{
+  background-image: url(../img/icon-3.svg);
+  background-repeat: no-repeat;
+}
 
 .quest_question{
 color: #000000;
@@ -177,3 +186,63 @@ list-style: none;
 width: 115px;
 height: 41px;
 }
+
+.section {
+  background-image: url(../img/filter_background.jpg);
+}
+.sedona_photo {
+  background-image: url(../img/intro-welcome.svg);
+  width="459"; 
+  height="353";
+}
+
+
+/*интерактив*/
+.the_details{
+  width: 110px;
+  height: 27px;
+  background-color: #81b3d2;
+}
+.reservation{
+  width: 142px;
+  height: 27px;
+  background-color: #766357;
+}
+
+.the_details a:hover,
+.the_details a:focus {
+  background-color: #669ec0;
+} 
+
+.reservation a:hover,
+.reservation a:focus {
+  background-color: #604e43;
+}
+
+.information a:hover,
+.information a:focus{
+color: #81b3d2;
+}
+.footer{
+  background-color: #000000;/*на время */
+}
+/*Соц сети подвал*/
+.social-button_tw{
+ background-image: url(../img/twitter.svg);
+ background-repeat: no-repeat;
+}
+.social-button_fb{
+  background-image: url(../img/fb-icon.svg);
+  background-repeat: no-repeat;
+}
+.social-button_yout{
+  background-image: url(../img/youtube.svg);
+   background-repeat: no-repeat;
+}
+
+
+
+
+
+
+

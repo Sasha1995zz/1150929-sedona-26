@@ -61,7 +61,27 @@ line-height: 26px;
 .features-list {
   list-style: none;
 }
-
+.cause_title{
+color: #000000; /* Цвет на время. в макете #ffffff; у №1 и №2 */
+font-size: 21px;
+font-weight: 700;
+line-height: 21px;
+text-transform: uppercase;
+}
+.cause_number{
+color: #000000; /*цвет на время. в макете #ffffff; у №1 и №2 */
+font-size: 14px;
+font-weight: 400;
+font-weight: 400;
+text-transform: uppercase;
+}
+.cause_text{
+color: #000000;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-transform: uppercase;
+}
  
 .cause_icon_home{
   background-image: url(../img/icon-1.svg);
@@ -126,6 +146,25 @@ background-color: #766357;
 .search-submit a:active;{
   background-color: #5496bd;
 }
+.hotel_checked{
+  list-style: none;
+}
+.headline_legend{
+color: #ffffff;
+font-size: 16px;
+font-weight: 700;
+line-height: 21px;
+text-transform: uppercase;
+}
+
+.hotel_label{
+color: #ffffff;
+font-size: 14px;
+font-weight: 400;
+line-height: 21px;
+text-transform: uppercase;
+}
+
 .hotel_assortment li{
 list-style: none;
 color: #000000;
@@ -203,12 +242,17 @@ height: 41px;
   height: 800px;
   background-repeat: no-repeat;
 }
+.intro-mask{
+ align-self: flex-end;
+}
 /*.sedona_photo {
   background-image: url(../img/intro-welcome.svg);
   width="459"; 
   height="353";
 }
 */
+
+
 
 
 /*интерактив*/
@@ -237,6 +281,10 @@ height: 41px;
 .information a:focus{
 color: #81b3d2;
 }
+
+
+
+
 .footer{
   background-color: #000000;/*на время */
 }

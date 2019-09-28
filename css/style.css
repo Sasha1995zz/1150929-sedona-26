@@ -102,23 +102,8 @@ text-transform: uppercase;
   background-repeat: no-repeat;
 }
 
-.quest_question{
-color: #000000;
-text-align: center;
-font-size: 30px;
-font-weight: 700;
-line-height: 36px;
-font-weight: 700;
-line-height: 24px;
-}
-.quest_title{
-color: #000000;
-text-align: center;
-font-size: 14px;
-font-weight: 400;
-line-height: 24px;
-text-transform: uppercase;
-}
+
+
 .search,
 .search_button{
  text-align: center;  
@@ -302,9 +287,155 @@ color: #81b3d2;
    background-repeat: no-repeat;
 }
 
+/* сетка   */
 
+html,
+body {
+  min-width: 1200px;
+  min-height: 2763px;
+}
 
+.main-header{
+  margin-bottom: 22px;
 
+  /* Временно для сетки */
+  min-height: 56px;
 
+}
+.main-navigation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+  /* Временно для сетки */
+  min-height: 56px;
+  background-color: transparent;
+}
 
+.container {
+  width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
 
+.promo{
+
+}
+.intro-mask{
+  
+}
+.reasons_div{
+ padding-top: 61px;
+ }
+ .reasons_discription{
+  padding-top: 38px;
+ }
+
+/*Заинтересовали? далее форма по заданию (сетки)*/
+.quest{
+  
+}
+  
+/*.search_button{
+  display: flex;
+  justify-content: center;
+}*/
+.search{
+  padding: 52px 316px 78px 316px;
+}
+
+/*padding: 138px 316px 199px 310px;*/
+
+  
+/** {
+  box-sizing: border-box;
+}*/
+
+.sedona_map{
+  background-image: url("img_nature.jpg");
+  min-height: 594px;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.search{
+ position: relative;
+ margin: 0;
+ padding: 55px 0 0;
+ text-align: center
+}
+.search h2{
+  margin: 0 0 30px;
+  padding: 0;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+}
+.search p{
+  margin: 0 0 48px;
+  line-height: 24px
+  font-size: 14px;
+  font-weight: 400;
+}
+.search .buttun_search,.search_form label,.search_button_form input{
+  font-family:"PT Sans","Arial",sans-serif;
+  text-transform: uppercase;
+  font-weight: 700
+}
+.search .button-search{
+  width: 568px;
+  padding: 30px 0;
+  background-color: #766357;
+  border:none;
+  color: #ffffff;
+  line-height: 26px;
+  font-size:21px
+}
+
+.search_form{
+  position: absolute;
+  width: 568px;
+  left: 50%;
+  top: 100%;
+  margin-left: -284px;
+  padding: 55px;
+  box-sizing: border-box;
+  background-color:#ffffff;
+ }
+  .button_search {
+   font-weight: 700;
+   color: white;
+   font-size: 21px;
+   text-transform: uppercase;
+   padding: 33px 139px 33px 139px;
+   background-color: #766357;
+   width: 568px;
+   height: 86px;
+  }
+
+  /*гостиницы*/
+
+  .hotel_assortment{
+   display: flex;
+  }
+  .hotels_list li{
+    display: flex;
+  }
+  
+  .hotel_buttons {
+    display: flex;
+  }
+  .hotel_price{
+    display: flex;
+  }
+  .footer{
+   display: flex;
+  justify-content: space-between;
+  }
+ .social_networks{
+  display: flex;
+  justify-content: center;
+ }

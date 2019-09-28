@@ -11,12 +11,18 @@
   <body class="inner-page">
   	<header class="main-header">
        <nav class="main-navigation">
-          <a class="logo">
+          <!--<a class="logo">
            <img  src="img/logo-sedona.svg" width="140" height="72"  alt="Sedona logo">
-          </a>
+          </a>--> <!--включила в список -->
              <ul class="site-navigation">
                 <li><a class="information" href="#">Информация</a></li>
                 <li><a href="#">Фото и видео</a></li>
+                <!--   -->
+                <li>
+                <a class="logo">
+                 <img  src="img/logo-sedona.svg" width="140" height="72"  alt="Sedona logo">
+                 </a>
+                </li>
                 <li><a href="#">Карта штата</a></li>
                 <li><a href="catalog.html">Гостиницы</a></li>
              </ul>
@@ -25,7 +31,7 @@
     <main class="container">
   <!-- на время <div class="sedona_photo">
      <img src="img/background_photo.jpg" width="1200" height="800">
-   </div>-->
+   </div>--> <!--включила как фон через стайл -->
       <div class="promo">
       <img src="img/intro-welcome.svg" width="459" height="353" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       <img class="intro-mask" src="img/intro-mask.svg" width="1200" height="59">
@@ -37,13 +43,7 @@
            </div>
        </section>
          <section class="cause">
-              
-
-              
-
-
-
-              <h1>Преимущества</h1>
+     <h1>Преимущества</h1>
            <div class="cause_discription"> 
                <h2 class="cause_title"> Настоящий городок! </h2>
                <p class="cause_number">№1</p>
@@ -99,62 +99,47 @@
            	   </li>
              </ul>
          </section>
-          <section> 
-              <div class="quest">
-                
-
-
-
-                
-
-
-
-                <h2 class="quest_question">Заинтересовались?</h2>
-                <p class="quest_title">Укажите предпологаемые даты поездки, <br>
+          
+        <div class="search">
+                <h2>Заинтересовались?</h2>
+                <p>Укажите предпологаемые даты поездки, <br>
           	    и мы покажем вам лучшие гостиницы в Седоне</p>
-              </div>
-            <div class="search">
-              	 <h1 class="search_button">Поиск гостиницы в Седоне</h1>
-               <form class="search_form">
+                <button class="button_search" type="button" id="search">Поиск гостиницы в Седоне</button>
+          <div class="search_form">
+              <form class="search_button_form">
                 <div class="search_data">
                    <label for="check2">Дата заезда</label>
-                  <div>
                    <input placeholder="24 апреля 2017" id="check2" name="check2">
-                </div>
-                </div>
-                <div>
-                   <label for="check3">Дата выезда</label>
-                 <div>
+                </div>            
+                <div class="search_data">
+                   <label for="check3">Дата выезда</label>       
                    <input placeholder="4 июля 2017" id="check3" name="check3">
-                  </div>
-                 </div>
-                  <div>
+                </div>
+                  <div class="search-wrapper">
                     <label for="adults">Взрослые</label>
-                    <div>
+                    <div class="adults">
                       <button type="button"><span>Увеличение</span></button>
                       <input value="2" id="adults"  name="adults">
                       <button><span>Уменьшение</span></button>
                     </div>
                   </div>
-                  <div>
+                  <div class="search-wrapper">
                     <label for="kids">Дети</label>
-                    <div>
+                    <div class="kids">
                       <button type="button"><span>Увеличение</span></button>
                       <input value="0" id="kids" name="kids">
                       <button type="button"><span>Уменьшение</span></button>
                     </div>
                   </div>
-              <div class="search-submit">
                 <button  name="search-submit">Найти</button>
-              </div>
                </form>
-            </div>
-              <section>
-              <h2>Расположение Седоны на карте</h2>
+          </div>
+        </div>
+            <section class="sedona_map">
+             <!-- <h2>Расположение Седоны на карте</h2>-->
               <img src="img/map.png"  width="1200" height="594" alt="Седона на карте">
             </section>
-         </section>
-      </main>      
+        </main>      
          <footer class="footer">
             <div class="hashtag">
                 <a href="#">#visitsedona</a>

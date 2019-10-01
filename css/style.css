@@ -83,7 +83,12 @@ font-weight: 400;
 line-height: 26px;
 }
 .features-list {
-  list-style: none;
+display: flex;
+justify-content: space-between;
+list-style: none;
+}
+.feature-list{
+  width: 400px;
 }
 .cause_title{
 color: #000000; /* Цвет на время. в макете #ffffff; у №1 и №2 */
@@ -232,6 +237,14 @@ background-color: #766357;
 }
 
 /* подвал */
+.footer .footer_container {
+  display: flex;
+}
+.hashtag {
+  width: 320px;
+  margin: 0;
+  margin-right: 80px;
+}
 .hashtag{
 color: #000000;
 font-size: 21px;
@@ -242,12 +255,62 @@ text-transform: uppercase;
 .hashtag a{
 text-decoration: none;
 }
+.footer-social ul{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  width: 141px;
+  margin: 0 auto;
+  padding: 0;
+  
+  list-style: none;
+}
+.social-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 43px;
+  height: 43px;
+  
+  background-color: #81b3d2;
+}
+
+
+.footer{
+ 
+  width: 1200px;
+  height: 120px;
+  /*display:block;
+  margin: 0 auto;*/
+
+
+  
+  background-color: #ffffff;
+  background-position: top center;
+  opacity: 0.9;
+}
+.footer{
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: auto;
+  top: 3200px;
+  margin: auto;
+  padding: 30px;
+  box-sizing: border-box;
+  }
+  .footer_container {
+    display: flex;
+    justify-content: space-between;
+  }
+
+
+
+
 .footer-social a{
  text-decoration: none;
 }
-/*.social_networks{
-list-style: none;
-}*/
+
 .developer__logo{
 width: 115px;
 height: 41px;
@@ -296,26 +359,6 @@ height: 41px;
 color: #81b3d2;
 }
 
-.footer{
-  background-color: #000000;/*на время */
-}
-/*Соц сети подвал*/
-/*.social-button_tw{
- background-image: url(../img/twitter.svg);
- background-repeat: no-repeat;
- background-color: #81b3d2;
-}
-.social-button_fb{
-  background-image: url(../img/fb-icon.svg);
-  background-repeat: no-repeat;
-  background-color: #81b3d2;
-}
-.social-button_yout{
-  background-image: url(../img/youtube.svg);
-  background-repeat: no-repeat;
-  background-color: #81b3d2;
-  
-}*/
 
 
 /* сетка   */
@@ -364,23 +407,19 @@ body {
 /*.search_button{
   display: flex;
   justify-content: center;
-}*/
+}
 .search{
   padding: 52px 316px 78px 316px;
-}
+}*/
 
-/*padding: 138px 316px 199px 310px;*/
 
-  
 /** {
   box-sizing: border-box;
 }*/
 
 .sedona_map{
-  background-image: url("img_nature.jpg");
   min-height: 594px;
 
-  /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -447,42 +486,24 @@ body {
   .hotel_price{
     display: flex;
   }
-  /*.footer{
+  .footer{
    display: flex;
   justify-content: space-between;
   }
  .social_networks{
   display: flex;
   justify-content: center;
- }*/
+ }
 
-/*временно*/
-{
-.social-button_tw{
- background-image: url(../img/twitter.svg);
- background-repeat: no-repeat;
- background-color: #81b3d2;
-}
-.twitter_hidden{
-  font-size: 0;
+/*hotel*/
+
+.section{
+  display:block;
+  margin: 0 auto;
 }
 
-
-
-/*подлючала для того чтобы скрыть текст*/
-.visually-hidden{
-display: none;
+.cause{
+  display: -webkit-inline-flex;
+  display: inline-flex; 
 }
-/*.visually-hidden{
-font-size: 0;
-}
-.visually-hidden{
-overflow: hidden;
-}
-.visually-hidden{
-visibility: none;
-}
-.visually-hidden{
-content: none;
-}*/
 

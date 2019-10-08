@@ -23,9 +23,7 @@
         </nav>
     </header>
     <main class="container">
-  <!-- на время <div class="sedona_photo">
-     <img src="img/background_photo.jpg" width="1200" height="800">
-   </div>--> <!--включила как фон через стайл -->
+  
       <div class="promo">
       <img class="promo_sedona" src="img/intro-welcome.svg" width="459" height="353" alt="Wellcome to the gorgeous Sedona. Because the Grand Canyon sucks!">
       <img class="intro-mask" src="img/intro-mask.svg" width="1200" height="59">
@@ -36,19 +34,19 @@
               <p class="reasons_discription">Рассмотрим 5 причин, по которым Седона круче, чем Гранд Каньон!<p>
            </div>
        </section>
-         <section class="cause">
-     <!--<h1>Преимущества</h1>-->
+         <section class="cause_one">
+<!--<h1>Преимущества</h1>-->
            <div class="cause_discription"> 
                <h2 class="cause_title"> Настоящий <br> городок! </h2>
                <p class="cause_number">-№1-</p>
                <p class="cause_text">Седона-не атракцион для туристов,<br> там течет своя жизнь</p>
            </div>
            <div class="cause_picture"> 
-              <img src="img/layer_10.jpg" width="800" height="256" alt="Городок Седоны">
+              <img src="img/real_town.jpg" width="800" height="256" alt="Городок Седоны">
            </div>
          </section>
            <section class="privilege">
-           	   <!--<h1> Привилегия </h1>-->
+<!--<h1> Привилегия </h1>-->
            	 <ul class="features-list">
            	 	<li class="cause_icon_home">
            	 		<h3 class="cause_title">Жилье</h3>
@@ -64,9 +62,9 @@
            	 	</li>
            	 </ul>
            </section>
-           <section class="cause">
+           <section class="cause_two">
            	 <div class="cause_picture"> 
-                  <img src="img/layer_5.jpg" width="800" height="256" alt="Мост дьявола">
+                  <img src="img/devils_bridge.jpg" width="800" height="256" alt="Мост дьявола">
            	 </div>
            	 <div class="cause_discription"> 
                  <h2 class="cause_title">Там есть <br> мост дьявола</h2>
@@ -102,29 +100,32 @@
           <div class="search_form">
               <form class="search_button_form">
                 <div class="search_data">
-                   <label for="check2">Дата заезда</label>
+                   <label for="check2">Дата заезда:</label>
                    <input placeholder="24 апреля 2017" id="check2" name="check2">
                 </div>            
                 <div class="search_data">
-                   <label for="check3">Дата выезда</label>       
+                   <label for="check3">Дата выезда:</label>       
                    <input placeholder="4 июля 2017" id="check3" name="check3">
                 </div>
+              
                   <div class="search-wrapper">
-                    <label for="adults">Взрослые</label>
+                    <label for="adults">Взрослые:</label>
                     <div class="adults">
-                      <button type="button"><span>Увеличение</span></button>
+                      <button type="button"><span>-</span></button>
                       <input value="2" id="adults"  name="adults">
-                      <button><span>Уменьшение</span></button>
+                      <button type="button"><span>+</span></button>
+                     
                     </div>
                   </div>
                   <div class="search-wrapper">
-                    <label for="kids">Дети</label>
+                    <label for="kids">Дети:</label>
                     <div class="kids">
-                      <button type="button"><span>Увеличение</span></button>
+                      <button type="button"><span>-</span></button>
                       <input value="0" id="kids" name="kids">
-                      <button type="button"><span>Уменьшение</span></button>
+                      <button type="button"><span>+</span></button>
                     </div>
                   </div>
+              
                 <button class="search-submit" name="search-submit">Найти</button>
                </form>
           </div>

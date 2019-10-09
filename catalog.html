@@ -66,25 +66,33 @@
      </div>
        <div>
         <fieldset class="field-form_slider">
-            <legend class="headline_legend">Стоимость в сутки (p):</legend>
-       </div>
-          <!--
-          <div>
-              цена от и до, ползунок
-         </div> 
-          -->
-        </fieldset>
-       <div class="submit_show">
-           <button type="submit" name="button">Показать</button>          
+            <div class="filter-range">
+      <div class="filter-range-title">Стоимость в сутки (р):</div>
+      <div class="price-controls">
+        <label class="min-price">от <input type="text" name="min-price" value="0"></label>
+        <label class="max-price">до <input type="text" name="max-price" value="3000"></label>
       </div>
+      <div class="range-controls">
+        <div class="scale">
+          <div class="bar"></div>
+        </div>
+        <div class="range-toggle range-toggle-min"></div>
+        <div class="range-toggle range-toggle-max"></div>
+      </div>
+      <button class="btn-transparent" type="submit">Показать</button>
+    </div>
+       </div>
+         
+        </fieldset>
+      
     </div>
   </form>
 </section>
 <!--<h2>Результаты поиска</h2>-->
     <section class="hotel_selection">
             <div class="hotel_scroll">
-              <ul class="hotel_assortment">
-                <li>
+             <ul class="hotel_assortment">
+                <li class="received">
                   Найдено: 3
                 </li>
                 <li class="hotel_sorting">
@@ -100,11 +108,15 @@
                   По рейтингу
                 </li>
               </ul>
+      <p class="arrow_up_down">
+        <a class="arrow arrow-up" href="#"></a>
+        <a class="arrow arrow-down" href="#"></a>
+      </p>
             </div>
           </section>
   <!--<h3>Список отелей</h3>-->
     <section class="all_hotel">
-          <ul class="hotels_list" style="border-bottom: 1px solid #000">
+          <ul class="hotels_list">
             <li class="hotel_item">
               <div class="hotel_img_wrapper">
                 <img src="img/Layer_21.jpg" width="135" height="90" alt="Amara Resort">

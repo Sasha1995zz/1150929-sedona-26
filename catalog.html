@@ -14,12 +14,12 @@
           <a class="logo" href="index.html">
             <img  src="img/logo-sedona.svg" width="140" height="72"  alt="Sedona logo">
           </a>
-             <ul class="site-navigation">
-                <li><a href="#">Информация</a></li>
-                <li><a href="#">Фото и видео</a></li>
-                <li><a href="#">Карта штата</a></li>
-                <li><a href="catalog.html">Гостиницы</a></li>
-             </ul>
+            <ul class="site-navigation">
+                <li><a class="information" href="#">Информация</a></li>
+                <li class="passage"><a href="#">Фото и видео</a></li>
+                <li class="location"><a href="#">Карта штата</a></li>
+                <li class="list_of_hotels"><a href="catalog.html">Гостиницы</a></li>
+            </ul>
         </nav>
     </header>
       <main class="hotel_main">
@@ -29,20 +29,26 @@
       <div>
         <fieldset class="field_form_list">
           <legend class="headline_legend">Инфраструктура:</legend>
-        <ul class="hotel_checked">
+       <ul class="hotel_checked">
           <li class="hotel_label">
-             <input type="checkbox" id="swim" name="swim" checked>
-             <label for="swim">Бассейн</label>
+             <label for="swim">
+            <input type="checkbox" id="swim" name="swim" checked>
+               <span class="fake-checkbox"></span> Бассейн
+            </label>
            </li>
           <li class="hotel_label">
+            <label for="parking">
             <input type="checkbox" id="parking" name="parking">
-             <label for="parking">Парковка</label>
+             <span class="fake-checkbox"></span>Парковка
+            </label>
           </li>
           <li class="hotel_label">
+            <label for="Wi-fi">
             <input type="checkbox" id="Wi-fi" name="Wi-fi">
-             <label for="Wi-fi">Wi-fi</label>
+             <span class="fake-checkbox"></span> Wi-fi
+            </label>
           </li>
-        </ul>
+          </ul>
         </fieldset>
       </div>
      <div>
@@ -50,18 +56,24 @@
         <legend class="headline_legend">Тип жилья:</legend>
         <ul class="hotel_checked">
            <li class="hotel_label">
+             <label for="hotel">
              <input type="checkbox" id="hotel" name="hotel" checked>
-             <label for="hotel">Гостиница</label>
+             <span class="fake-checkbox"></span> Гостиница
+             </label>
            </li>
           <li class="hotel_label">
+            <label for="motel">
             <input type="checkbox" id="motel" name="motel" checked>
-             <label for="motel">Мотель</label>
+            <span class="fake-checkbox"></span> Мотель
+            </label>
            </li>
           <li class="hotel_label">
+            <label for="apartments">
             <input type="checkbox" id="apartments" name="apartments" checked>
-             <label for="apartments">Апартаменты</label>
+              <span class="fake-checkbox"></span> Апартаменты
+            </label>
            </li>
-        </ul>
+          </ul>
        </fieldset>
      </div>
        <div>
@@ -82,30 +94,28 @@
       <button class="btn-transparent" type="submit">Показать</button>
     </div>
        </div>
-         
         </fieldset>
-      
     </div>
   </form>
 </section>
 <!--<h2>Результаты поиска</h2>-->
     <section class="hotel_selection">
             <div class="hotel_scroll">
+             <div class="received">
+                  <p>Найдено: 3</p>
+                </div>
              <ul class="hotel_assortment">
-                <li class="received">
-                  Найдено: 3
-                </li>
+                
                 <li class="hotel_sorting">
                   Сортировка:
-                </li>
                 <li class="hotel_by_price">
                   По цене
                 </li>
                 <li class="hotel_type">
-                  По типу
+                 <u> По типу </u>
                 </li>
                 <li class="hotel_by_rating">
-                  По рейтингу
+                  <u>По рейтингу</u>
                 </li>
               </ul>
       <p class="arrow_up_down">
@@ -122,9 +132,9 @@
                 <img src="img/Layer_21.jpg" width="135" height="90" alt="Amara Resort">
               </div>
               <div class="hotel_title">
-                <a href="#">Amara Resort & SPA</a>
+                <a class="name_hotel" href="#">Amara Resort & SPA</a>
                 <div class="hotel_price">
-                  <div>Гостиница</div>
+                  <div class="category_hotel">Гостиница</div>
                   <div>от 4000 p.</div>
                 </div>
                 <div class="hotel_buttons">
@@ -133,23 +143,20 @@
                 </div>
               </div>
               <div class="hotel_rating">
-                <!--<span>
-                  <span>*</span>
-                  <span>*</span>
-                  <span>*</span>
-                  <span>*</span>
-                </span>-->
-                <span>Рейтинг: 8,5</span>
-              </div>
+               <span class="star_four">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90" height="17" viewBox="0 0 90 17"><g><g><image width="18" height="17" transform="translate(24)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g><g><image width="18" height="17" transform="translate(49)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g><g><image width="18" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g><g><image width="18" height="17" transform="translate(72)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g></g></svg>
+              </span>
+                <span class="rating">Рейтинг: 8,5</span>
+            </div>
             </li>
             <li class="hotel_item">
               <div class="hotel_img_wrapper">
                 <img src="img/Layer_89_copy.jpg"   width="135" height="90"  alt="Desert Quail Inn">
               </div>
               <div class="hotel_title">
-                <a href="#">Desert Quail Inn</a>
+                <a class="name_hotel"  href="#">Desert Quail Inn</a>
                 <div class="hotel_price">
-                  <div>Мотель</div>
+                  <div class="category_motel">Мотель</div>
                   <div>от 3000 p.</div>
                 </div>
                 <div class="hotel_buttons">
@@ -158,12 +165,10 @@
                 </div>
               </div>
               <div class="hotel_rating">
-                <!--<span>
-                  <span>*</span>
-                  <span>*</span>
-                  <span>*</span>
-                </span>-->
-                <span>Рейтинг: 8,9</span>
+               <span class="star_three">
+               <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="65" height="17" viewBox="0 0 65 17"><g><g><image width="18" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g><g><image width="18" height="17" transform="translate(24)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g><g><image width="18" height="17" transform="translate(47)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g></g></svg>
+             </span>
+                <span class="rating">Рейтинг: 8,9</span>
               </div>
             </li>
             <li class="hotel_item">
@@ -171,9 +176,9 @@
                 <img src="img/Layer_22.jpg" width="135" height="90" alt="Villas at Poco Diablo">
               </div>
               <div class="hotel_title">
-                <a href="#">Villas at Poco Diablo</a>
+                <a class="name_hotel" href="#">Villas at Poco Diablo</a>
                 <div class="hotel_price">
-                  <div>Апартаменты</div>
+                  <div class="category_apartment">Апартаменты</div>
                   <div>от 2000 p.</div>
                 </div>
                 <div class="hotel_buttons">
@@ -182,25 +187,23 @@
                 </div>
               </div>
               <div class="hotel_rating">
-                <!--<span>
-                  <span>*</span>
-                  <span>*</span>
-                </span>-->
-                <span>Рейтинг: 9,2</span>
+                <span class="star_two">
+                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="41" height="17" viewBox="0 0 41 17"><g><g><image width="18" height="17" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g><g><image width="18" height="17" transform="translate(23)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAAARCAYAAADQWvz5AAABuElEQVQ4T6WTzysEYRjH32dWsZIDzpJdocwoe5Cj69qZOPqRoxQpB6Iw7+464CSScl1JDg47w3Wvm1DelciP5A/gQKHsPJ6Z0LIzu2JO0/t+3k/v83yfF1iRL2aKkAUAvEs+LIRCMVE0KRZsRteUqf+JDHHtiFQl8GdRbE/IaDFhCxAxxLXWYy9ZwdK4IeIEzDgixua5qsz+SRQ1xDkdbPw4fEHlNXmKYoYYRQbBnwCV4gdgQ7nriGyDAnzOkwG7Br5zWsH8uAYMB4sl6L6PiTKrdOSrR3SzPurDOsGVvxQ+0uHhOVXZsvlvzeamqAdkm7TeUUSWRmD9PKLcfHJ5qfFUqgSeanYpJ9VNRi0wrYr7Ht7Z+Za77xo/pXVEUJvHrY4pvdDPvTxRfD8TsLJ4Vag0yQfB2bDsTLxnaVHjZIJat/QBPNMkjoNkDzZbpjW/01hk03Oa4rxBb1FSpCmCdgIEZqVe3t1yZsNxM9NsIW7Tr0KqA12VbcZdpCdPayWwbpHhapWvfHIs3PCaC6/sX5Y+ZF8WKYgxC6W6qNZy53qjmJkZoFl60CPyXqEe0RsMA0K1rsmJT+4dymaXpmrnwmgAAAAASUVORK5CYII="/></g></g></svg>
+              </span>
+                <span class="rating">Рейтинг: 9,2</span>
               </div>
             </li>
           </ul>
     </section>    
         </main>
-       <footer class="footer">
-           <div class="footer_container">
+         <footer class="footer_catalog">
+            
                 <p class="hashtag">
                 <a href="#">#visitsedona</a>
               </p>
             
             <div class="footer-social">
                <ul class="social_networks">
-                 
         <li><a class="social-button" href="#"><span class="visually-hidden"></span>
         <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="17" height="15" viewBox="0 0 17 15"><path fill="#FFF" d="M10.95.144c1.685-.496 2.984.27 3.577 1.179.673-.231 1.331-.481 2.011-.708a2.345 2.345 0 0 1-.857 1.768c.685.17 1.304-.491 1.304-.491-.169 1-1.006 1.788-1.563 2.024-.231 6.75-3.175 11.217-10.077 11.082h-.446c-.41 0-4.164-.46-4.898-1.887 2.271.196 3.893-.422 4.693-1.177-.96-.3-2.679-.477-2.979-2.95.349.106.564.228 1.19.119C1.705 8.247.374 7.53.448 5.33c.285.328 1.067.536 1.34.472C1.085 5.561-.182 2.442.894.85c1.818 1.854 3.735 3.606 7.152 3.773C8.254 2.33 9.183.793 10.95.144z"/></svg>
 
@@ -222,7 +225,7 @@
               </svg>
               </a>
             </p>
-            </div>
+            
          </footer>
      </body>
 </html>

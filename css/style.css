@@ -262,19 +262,18 @@ text-align: center;
 }
 .search_button_form{
   margin-top: -32px;
-}
-.search_form{
   position: absolute;
   width: 568px;
   left: 0;
   right: 0;
   top: 100%;
   margin: auto;
-  padding: 55px;
+  padding: 20px;
   box-sizing: border-box;
   box-shadow: 0 7px 15px rgba(0, 1, 1, 0.15);
-  background-color:#ffffff;
- }
+  background-color: #ffffff;
+}
+
 .button_search{
 color: #ffffff;
 text-align: center;
@@ -925,11 +924,11 @@ cursor: pointer;
   }
 
   70% {
-    transform: translateY(30px);
+    transform: translateY(0);
   }
 
   90% {
-    transform: translateY(-10px);
+    transform: translateY(0);
   }
 
   100% {

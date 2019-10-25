@@ -106,29 +106,29 @@
                    <label for="check3">Дата выезда:</label>
                    <input type="text" placeholder="4 июля 2017" id="check3" name="check3">
                 </div>
+<div class="formline-adult-child">
+<p class="appointment-item adult">
+  <label for="adult">Взрослые:</label>
+  </p>
+  <div class="formline-inputzone">
+      <button class="minus" type="button"><span class="visually-hidden"></span>&#x2043;</button>
+    <input class="input_number" type="text" name="adult" value="" placeholder="2" id="adult">
+    <button class="plus" type="button"><span></span>+</button>
+    </div>
               
-              <div class="search-wrapper">
-                  <div class="search-column">
-                  <label for="adults">Взрослые:</label>
-                  <div class="adults">
-                <button type="button"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3"><g><g><image width="12" height="3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAKUlEQVQYV2NcsWJFKCMj4yoGIsD////DGFeuXFkOVNtBhHqQkgqSNQAAtUINNQderJYAAAAASUVORK5CYII="/></g></g></svg></span></button>
-                <input value="2" id="adults"  name="adults">
-                <button type="button"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11"><g><g><image width="11" height="11" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAUUlEQVQoU2NkQAMrV648AxQyBuKz4eHhJsjSjFgU/4eJARWjyNNQMZIb0V2Ezj/LCFQMdyMh1SDF74CKBAkpBMq/p6EHKQ1nmB/eAyNFCNkwANPKLLZN+S4fAAAAAElFTkSuQmCC"/></g></g></svg></span></button>
-              </div>
-                  </div>
-                  <div class="search-column">
-                    <label for="kids">Дети:</label>
-                    <div class="kids">
-                      <button type="button"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="12" height="3" viewBox="0 0 12 3"><g><g><image width="12" height="3" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAADCAYAAACnI+4yAAAAKUlEQVQYV2NcsWJFKCMj4yoGIsD////DGFeuXFkOVNtBhHqQkgqSNQAAtUINNQderJYAAAAASUVORK5CYII="/></g></g></svg></span></button>
-                      <input value="0" id="kids" name="kids">
-                      <button type="button"><span><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11" height="11" viewBox="0 0 11 11"><g><g><image width="11" height="11" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAsAAAALCAYAAACprHcmAAAAUUlEQVQoU2NkQAMrV648AxQyBuKz4eHhJsjSjFgU/4eJARWjyNNQMZIb0V2Ezj/LCFQMdyMh1SDF74CKBAkpBMq/p6EHKQ1nmB/eAyNFCNkwANPKLLZN+S4fAAAAAElFTkSuQmCC"/></g></g></svg></span></button>
-                    </div>
-                  </div>
-              </div>
+   <p class="appointment-item child">
+  <label for="child">Дети:</label>
+  </p>
+  <div class="formline-inputzone">
+  <button class="minus" type="button"><span></span>&#x2043;</button>
+  <input type="text" name="children" value="" placeholder="0" id="child">
+  <button class="plus" type="button"><span></span>+</button>
+  </div>
+</div>
                 <button class="search-submit" name="search-submit">Найти</button>
                </form>
+    </div>
           </div>
-        </div>
             <section class="sedona_map">
              <!-- <h2>Расположение Седоны на карте</h2>-->
               <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d475957.83483896346!2d-111.94672641874268!3d34.83906897555744!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x872da132f942b00d%3A0x5548c523fa6c8efd!2z0KHQtdC00L7QvdCwLCDQkNGA0LjQt9C-0L3QsCwg0KHQqNCQ!5e0!3m2!1sru!2sru!4v1455796462463" width="1200" height="593" style="border:0" allowfullscreen></iframe>
@@ -167,64 +167,8 @@
             
          </footer>
          <script>
-  var link = document.querySelector(".button_search");
-  
-  var popup = document.querySelector(".search_button_form");
-  var close = popup.querySelector(".button_search");
-  
-  var form = popup.querySelector("form");
-  var login = popup.querySelector("[name=login]");
-  var password = popup.querySelector("[name=password]");
-  
-  var isStorageSupport = true;
-  var storage = "";
-
-  try {
-    storage = localStorage.getItem("login");
-  } catch (err) {
-    isStorageSupport = false;
-  }
-  
-  link.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.add("modal-show");
-    
-    if (storage) {
-      login.value = storage;
-      password.focus();
-    } else {
-      login.focus();
-    }
-  });
-  
-  close.addEventListener("click", function (evt) {
-    evt.preventDefault();
-    popup.classList.remove("modal-show");
-    popup.classList.remove("modal-error");
-  });
-  
-  form.addEventListener("submit", function (evt) {
-    if (!login.value || !password.value) {
-      evt.preventDefault();
-      popup.classList.remove("modal-error");
-      popup.offsetWidth = popup.offsetWidth;
-      popup.classList.add("modal-error");
-    } else {
-      if (isStorageSupport) {
-        localStorage.setItem("login", login.value);
-      }
-    }
-  });
-  
-  window.addEventListener("keydown", function (evt) {
-    if (evt.keyCode === 27) {
-      evt.preventDefault();
-      if (popup.classList.contains("modal-show")) {
-        popup.classList.remove("modal-show");
-        popup.classList.remove("modal-error");
-      }
-    }
-  });
+     var link=document.querySelector(".button_search"),popup=document.querySelector(".search_form");
+     link.addEventListener("click",function(e){e.preventDefault(),popup.classList.toggle("modal-show")});
 </script>
      </body>
 </html>

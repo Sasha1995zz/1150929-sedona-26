@@ -13,6 +13,23 @@ body {
   background-position: top center;
   background-repeat: no-repeat;
 }
+.wrapper-div{
+  max-width: 1200px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
+  box-shadow:0 5px 15px 0 rgba(0,1,1,0.2)}
+
+.wrapper-div-catalog{
+  max-width: 1224px;
+  min-height: 540px;
+  margin-right: auto;
+  margin-left: auto;
+  position: relative;
+  -webkit-box-shadow: 0 5px 15px 0 rgba(0,1,1,0.2);
+  box-shadow:0 5px 15px 0 rgba(0,1,1,0.2)}
+
 .main-header{
   margin-right: 40px;
 }
@@ -237,6 +254,7 @@ text-align: center;
   line-height: 24px
   font-size: 14px;
   font-weight: 400;
+
 }
 .search 
 .buttun_search{
@@ -249,6 +267,10 @@ text-align: center;
   font-family:"PT Sans","Arial",sans-serif;
   text-transform: uppercase;
   font-weight: 700
+}
+.search_data ::-webkit-input-placeholder {
+  color: #000000;
+  padding-left: 15px
 }
 
 .search .button-search{
@@ -276,16 +298,13 @@ text-align: center;
 
 .button_search{
 color: #ffffff;
-text-align: center;
 font-size: 21px;
 font-weight: 700;
-line-height: 26px;
-width: 568px;
-height: 86px;
 background-color: #766357;
-text-transform: uppercase;
 white-space: nowrap;
-padding: 35px 139px 33px 140px;
+
+ text-transform: uppercase;
+padding: 35px 119px 33px 116px;
 border: none;
 }
 .search-submit{
@@ -294,10 +313,11 @@ border: none;
   color: #ffffff;
   font-size: 21px;
   font-weight: 700;
-  line-height: 26px;
+  text-transform: uppercase;
   background-color: #81b3d2;
   border: none;
   margin-top: 50px;
+  margin-bottom: 35px
 }
 .sedona_map{
   min-height: 594px;
@@ -332,7 +352,8 @@ margin-top: 29px;
   align-items: center;
   margin-bottom: 29px;
   margin: auto;
-  width:458px; height:38px;
+  width: 458px; 
+  height: 38px;
   margin-top: 30px
 }
 .formline-adult-child{
@@ -360,7 +381,7 @@ margin-top: 29px;
 .adult{
   width: 112px;
   padding-top: 40px;
-  padding-left: 0px
+  
 }
 .formline-inputzone{
   display: -webkit-box;
@@ -411,15 +432,6 @@ margin-top: 29px;
 input{
   border: none
 }
-
-
-.search-submit a:hover,
-.search-submit a:focus; {
-  background-color: #669ec0;
-}
-.search-submit a:active;{
-  background-color: #5496bd;
-}
 .hotel_checked{
   list-style: none;
 }
@@ -469,6 +481,7 @@ font-size: 14px;
 font-weight: 400;
 line-height: 21px;
 text-transform: uppercase;
+padding-top: 8px;
 }
 .hotel_rating{
 color: #666666;
@@ -479,7 +492,7 @@ text-transform: uppercase;
 margin-left: 591px;
 }
 .hotel_buttons{
-
+margin-top: -8px;
 font-size: 14px;
 font-weight: 700;
 line-height: 21px;
@@ -496,7 +509,7 @@ line-height: 21px;
   position: absolute;
   left: 0;
   right: 0;
-  top: 2655px;
+  top: 2660px;
   margin: auto;
   box-sizing: border-box;
   }
@@ -524,10 +537,14 @@ font-weight: 700;
 line-height: 26px;
 width: 16%;
 margin-top: 45px;
+
 }
 .hashtag a{
 text-decoration: none;
+color: #000000;
 }
+
+
 .social-button {
   display: flex;
   align-items: center;
@@ -536,9 +553,11 @@ text-decoration: none;
   height: 43px;
   background-color: #81b3d2;
 }
-.social_networks li{
+.footer-social ul{
   margin-top: 36px;
+
 }
+
 .footer_icon{
   margin-top: 40px;
 }
@@ -828,8 +847,11 @@ height: 41px;
 }
 .hotel_item{
  margin-top:  45px;
+ margin-bottom: -25px;
  border-bottom: 1px solid #e5e5e5;
+ border-left: 20px;
  padding-bottom: 20px;
+
  width: 1200px;
 }
 
@@ -906,7 +928,7 @@ label span {
   position: absolute;
   left: 0;
   right: 0;
-  top: 850px;
+  top: 800px;
   margin: auto;
   box-sizing: border-box;
   }
@@ -988,5 +1010,34 @@ color:#b2b2b2
 .hotel_assortment u{
 cursor: pointer;
 }
+/*script*/
+.modal-show{
+  display:none
+}
 
-.modal-show{display:none}
+.calendar,.calendar2{
+  position:absolute;
+  width: 38px;
+  height: 38px;
+  right: 55px;
+  border: 0;
+  background-color: #f2f2f2;
+  outline: 0
+}
+  .calendar2{
+    top: 120px
+  }
+ .calendar{
+  top: 50px
+ }
+
+  .calendar ,.calendar2 {
+  opacity: 3
+  }
+  .calendar2 svg:hover,.calendar  svg:hover {
+  color: #cacaca;
+  }
+  .calendar2:focus ,.calendar:focus{
+  
+  fill: #81b3d2
+  }

@@ -1,7 +1,6 @@
 body {
   margin: 0 auto;
   padding: 0;
-
   font-family: "PT Sans", Arial, sans-serif;
   font-size: 14px;
   line-height: 26px;
@@ -22,7 +21,7 @@ body {
   box-shadow:0 5px 15px 0 rgba(0,1,1,0.2)}
 
 .wrapper-div-catalog{
-  max-width: 1224px;
+  max-width: 1200px;
   min-height: 540px;
   margin-right: auto;
   margin-left: auto;
